@@ -15,9 +15,9 @@ mkdir client
 mkdir server
 mkdir client/public client/src
 
-touch public/index.html
-mkdir public/css public/images public/js
-touch public/css/main.css
+touch client/public/index.html
+mkdir client/public/css client/public/images client/public/js
+touch client/public/css/main.css
 
 echo "node_modules\nnpm-debug.log\nbundle.js" > .gitignore
 
@@ -89,8 +89,8 @@ touch server/db/seeds.js
 touch server/routers/index_router.js
 
 npm init -y
-#npm install -D webpack webpack-cli nodemon
-#npm install express mongodb mocha
+npm install -D webpack webpack-cli nodemon
+npm install express mongodb mocha
 
 echo "{
   \"name\": \"${PWD##*/}\",
@@ -148,9 +148,9 @@ clear
 
 echo "Script execution finished."
 echo "Don't forget to run:"
-echo "mongod in a new tab"
-echo "mongo < server/db/seeds.js in a new tab"
-echo "npm run build in a new tab"
-echo "npm run server:dev in a new tab"
-echo "Take in my the index router is created by completly empty."
-echo "After this you are ready to develop! Have Fun"
+echo " - mongod in a new tab"
+echo " - mongo < server/db/seeds.js in a new tab"
+echo " - npm run build in a new tab"
+echo " - npm run server:dev in a new tab"
+echo " - Take in my the index router is created by completly empty."
+echo " - After this you are ready to develop! Have Fun"
