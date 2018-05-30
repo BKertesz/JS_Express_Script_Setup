@@ -143,6 +143,9 @@ app.use(indexRouter);
 app.listen(3000, function () {
   console.log(\`Listening on port \${ this.address().port }\`);
 });" > server/server.js
+
+echo "document.addEventListener('DOMContentLoaded', () => {});" > client/src/app.js
+
 atom .
 clear
 
