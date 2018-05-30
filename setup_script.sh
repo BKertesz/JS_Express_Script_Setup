@@ -145,7 +145,7 @@ app.listen(3000, function () {
 });" > server/server.js
 
 echo "document.addEventListener('DOMContentLoaded', () => {});" > client/src/app.js
-
+rm setup_script.sh
 atom .
 clear
 
